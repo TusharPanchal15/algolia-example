@@ -1,0 +1,27 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@algolia/autocomplete-theme-classic"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Query Suggestions | Autocomplete</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div id="autocomplete"></div>
+    </div>
+    <!-- Include AlgoliaSearch JS Client and autocomplete.js library -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/algoliasearch@4.20.0/dist/algoliasearch-lite.umd.js"
+      integrity="sha256-DABVk+hYj0mdUzo+7ViJC6cwLahQIejFvC+my2M/wfM="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@algolia/autocomplete-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@algolia/autocomplete-plugin-query-suggestions"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
