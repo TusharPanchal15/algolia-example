@@ -16,6 +16,14 @@ search.addWidgets([
 
   instantsearch.widgets.hits({
     container: '#hits',
+    templates: {
+      item: (hit, { html, components }) => html`
+        <article>
+          <h1>${components.Highlight({ hit, attribute: 'name' })}</h1>
+          <p>${components.Highlight({ hit, attribute: 'description' })}</p>
+        </article>
+      `,
+    },
   })
 ]);
 
